@@ -16,11 +16,12 @@ bot.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-	if(cmd === `${prefix}yt`){
+if(cmd === `${prefix}yt`){
   	let helpEmbed1 = new Discord.RichEmbed()
-    .setTitle("Youtube Kanalı")
+    .setTitle("MonsterYusuf35'in Youtube Kanalı. (Tıklayın)")
     .setColor(botconfig.pembe)
-    .setUrl("https://www.youtube.com/channel/UCewe_FtSZW0xByo2ZnhyfxA")
+    .setThumbnail("https://yt3.ggpht.com/-Tewef_jnf0s/AAAAAAAAAAI/AAAAAAAAAAA/AT2C2J460fU/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg")
+    .setURL("https://www.youtube.com/channel/UCewe_FtSZW0xByo2ZnhyfxA")
     message.channel.send(helpEmbed1);
     return;
   }
@@ -39,6 +40,7 @@ bot.on("message", async message => {
     .addField("Şikayet", "&sikayet <@kullanıcı adı> <sebep>: Kullanıcıyı yetkililere şikayet eder.")
     .addField("Bot Hakkında", "&bot: Bot'un hakkında bilgi alırsınız.")
     .addField("Sunucu Hakkında", "&sunucu: Sunucu hakkında bilgi alırsınız.")
+    .addField("YouTube Kanalı", "&yt: MonsterYusuf35'in YouTube Kanalı")
     message.channel.send(helpEmbed1);
     message.channel.send(helpEmbed2);
     return;
