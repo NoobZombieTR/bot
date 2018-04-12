@@ -16,6 +16,15 @@ bot.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
+	if(cmd === `${prefix}yt`){
+  	let helpEmbed1 = new Discord.RichEmbed()
+    .setTitle("Youtube Kanalı")
+    .setColor(botconfig.pembe)
+    .setUrl("https://www.youtube.com/channel/UCewe_FtSZW0xByo2ZnhyfxA")
+    message.channel.send(helpEmbed1);
+    return;
+  }
+	
   if(cmd === `${prefix}yardim`){
 
     let helpEmbed1 = new Discord.RichEmbed()
