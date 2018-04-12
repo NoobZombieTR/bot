@@ -4,7 +4,7 @@ const bot = new Discord.Client({disableEveryone: true});
 bot.on("ready", async () => {
 
   console.log(`${bot.user.username} adlı bot ${bot.guilds.size} sunucusunda online!`);
-  bot.user.setActivity("(&)MNSTRArmy Bot ;-)", {url: "https://www.twitch.tv/directory/game/Minecraft"});
+  bot.user.setActivity("&yardim - MonsterArmy Bot (AÇIK)", {url: "https://www.twitch.tv/directory/game/Minecraft"});
 
 });
 bot.on("message", async message => {
