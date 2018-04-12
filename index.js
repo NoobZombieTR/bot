@@ -15,7 +15,79 @@ bot.on("message", async message => {
   let messageArray = message.content.split(" ");
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
+var msg = message.content.toUpperCase();
+  var sender = message.author;
 
+  if (sender.id === "429357437641031680"){
+  	return;
+  }
+	
+	if(message.content === "selam"){
+  	message.channel.send(`${message.author} Aleyküm Selam, Hoşgeldin!`)
+  }
+  if(message.content === "sa"){
+  	message.channel.send(`${message.author} Aleyküm Selam, Hoşgeldin!`)
+  }
+  if(message.content.includes("amk")){
+  	message.delete()
+  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
+  }
+  if(message.content.includes("yarrak")){
+  	message.delete()
+  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
+  }
+  if(message.content.includes("amq")){
+  	message.delete()
+  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
+  }
+  if(message.content.includes("aq")){
+  	message.delete()
+  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
+  }
+  if(message.content.includes("oç")){
+  	message.delete()
+  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
+  }
+  if(message.content.includes("siktir")){
+  	message.delete()
+  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
+  }
+  if(message.content.includes("sik ")){
+  	message.delete()
+  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
+  }
+  if(message.content.includes("am ")){
+  	message.delete()
+  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
+  }
+  if(message.content.includes(" mk")){
+  	message.delete()
+  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
+  }
+  if(message.content.includes("annenin")){
+  	message.delete()
+  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
+  }
+  if(message.content.includes(" amı")){
+  	message.delete()
+  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
+  }
+  if(message.content.includes("yavşak")){
+  	message.delete()
+  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
+  }
+  if(message.content.includes("piç")){
+  	message.delete()
+  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
+  }
+  if(message.content.includes("gavat")){
+  	message.delete()
+  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
+  }
+  if(message.content.includes("orospu")){
+  	message.delete()
+  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
+  }
 if(cmd === `${prefix}yt`){
   	let helpEmbed1 = new Discord.RichEmbed()
     .setTitle("MonsterYusuf35'in Youtube Kanalı. (Tıklayın)")
