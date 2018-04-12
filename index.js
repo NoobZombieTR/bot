@@ -2,7 +2,7 @@ const botconfig = require("./botconfig.json");
 const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 bot.on("ready", async () => {
-
+message.channel.send(`[+]SİSTEM: BOT YENİLENDİ! HERHANGİ BİR HATA OLURSA: NOOBZOMBIE#5514`)
   console.log(`${bot.user.username} adlı bot ${bot.guilds.size} sunucusunda online!`);
   bot.user.setActivity("&yardim - MonsterArmy Bot (AÇIK)", {url: "https://www.twitch.tv/directory/game/Minecraft"});
 
