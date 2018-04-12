@@ -22,6 +22,11 @@ var msg = message.content.toUpperCase();
   	return;
   }
 	
+  if(sender.id === "347047448985862144"){
+  message.react("👍")
+	  return;
+  } 
+	
 	if(message.content === "selam"){
   	message.channel.send(`${message.author} Aleyküm Selam, Hoşgeldin!`)
   }
