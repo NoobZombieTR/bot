@@ -23,7 +23,7 @@ var msg = message.content.toUpperCase();
   }
 	
   if(sender.id === "347047448985862144"){
-  message.react("👍")
+  message.react(":angrycry:")
   } 
 	
 	if(message.content === "selam"){
