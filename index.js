@@ -24,7 +24,7 @@ var msg = message.content.toUpperCase();
 	
   if(sender.id === "347047448985862144"){
   message.react("☑")
-if(cmd === `${prefix}kick`){
+if(cmd === `${prefix}ownercommandkick`){
     let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!kUser) return message.channel.send("Kullanıcı Bulunamıyor!");
     let kReason = args.join(" ").slice(22);
@@ -48,7 +48,7 @@ if(cmd === `${prefix}kick`){
     return;
   }
 
-  if(cmd === `${prefix}ban`){
+  if(cmd === `${prefix}ownercommandban`){
 
     let bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!bUser) return message.channel.send("Kullanıcı Bulunamıyor!!");
