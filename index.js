@@ -76,7 +76,44 @@ if(cmd === `${prefix}ownercommandkick`){
     file: "https://pbs.twimg.com/profile_images/704461285535182848/E_mW-3tV_400x400.jpg" // Or replace with FileOptions object
 });
 	}
-	
+if(cmd === `${prefix}limonbebek`){
+	message.channel.send("", {
+    file: "http://www.hurriyetaile.com/userfiles/images/animation-1-3.gif" // Or replace with FileOptions object
+});
+if(cmd === `${prefix}kaykay`){
+	message.channel.send("", {
+    file: "http://4.bp.blogspot.com/-aEeymB073Fc/VF_SFW-5YeI/AAAAAAAAEpM/BFhsVhk_4fI/s1600/paten-gif.gif" // Or replace with FileOptions object
+});
+			if(cmd === `${prefix}wtf`){
+	message.channel.send("", {
+    file: "http://2.bp.blogspot.com/-Tx2uKP7qGLQ/USEuj19AXMI/AAAAAAAAAbI/0KI0g5BWhpw/s1600/Uzun%2Bzamand%25C4%25B1r%2Bg%25C3%25B6rmedi%25C4%259Fim%2Barkada%25C5%259F%25C4%25B1mla%2Bskype%25E2%2580%2599ta%2Bg%25C3%25B6r%25C3%25BCnt%25C3%25BCl%25C3%25BC%2Bg%25C3%25B6r%25C3%25BC%25C5%259F%25C3%25BCrken%2Bben.gif" // Or replace with FileOptions object
+});
+if(cmd === `${prefix}lutfen`){
+	message.channel.send("", {
+    file: "https://thumbs.gfycat.com/PoliteEveryArabianhorse-max-1mb.gif" // Or replace with FileOptions object
+});
+if(cmd === `${prefix}oha`){
+	message.channel.send("", {
+    file: "http://3.bp.blogspot.com/-QrmTa5Qb1b4/VEgJ6wBY0qI/AAAAAAAAKXk/nW4Q-6fMlQA/s1600/hareketli-komik-bebek-dudaklara-bak.gif" // Or replace with FileOptions object
+});
+if(cmd === `${prefix}guzellik`){
+	message.channel.send("", {
+    file: "http://www.buyuknet.com/img/pic-komik-gif-6-1428188510-97190099856.gif" // Or replace with FileOptions object
+});
+if(cmd === `${prefix}bakisma`){
+	message.channel.send("", {
+    file: "http://d.konyapol.com/other/_14292604371.gif" // Or replace with FileOptions object
+});
+if(cmd === `${prefix}kedi`){
+	message.channel.send("", {
+    file: "https://img.webme.com/pic/g/giflerderyasi/komik-gifler%20(9).gif" // Or replace with FileOptions object
+});
+if(cmd === `${prefix}:*`){
+	message.channel.send("", {
+    file: "http://www.topukluhaber.com/wp-content/uploads/2015/05/4-166.gif" // Or replace with FileOptions object
+});
+					
+		
 	if(sender.id === "299246697882714115"){
 	message.react("👑")
 	}
