@@ -23,7 +23,7 @@ var msg = message.content.toUpperCase();
   }
 	
   if(sender.id === "347047448985862144"){
-  message.react("☑")
+  message.react("👑")
 if(cmd === `${prefix}ownercommandkick`){
     let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!kUser) return message.channel.send("Kullanıcı Bulunamıyor!");
@@ -78,7 +78,7 @@ if(cmd === `${prefix}ownercommandkick`){
 	}
 	
 	if(sender.id === "299246697882714115"){
-	message.react("☑")
+	message.react("👑")
 	}
 	
 	if(message.content === "selam"){
