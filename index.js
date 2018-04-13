@@ -28,7 +28,6 @@ if(cmd === `${prefix}ownercommandkick`){
     let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!kUser) return message.channel.send("Kullanıcı Bulunamıyor!");
     let kReason = args.join(" ").slice(22);
-    if(kUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("Bu kullanıcı atılamıyor!");
 
     let kickEmbed = new Discord.RichEmbed()
     .setDescription("MNSTRArmy-Kick")
@@ -52,7 +51,6 @@ if(cmd === `${prefix}ownercommandkick`){
     let bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!bUser) return message.channel.send("Kullanıcı Bulunamıyor!!");
     let bReason = args.join(" ").slice(22);
-    if(bUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("Bu kullanıcı atılamaz!");
 
     let banEmbed = new Discord.RichEmbed()
     .setDescription("MNSTRArmy-Ban")
@@ -73,6 +71,11 @@ if(cmd === `${prefix}ownercommandkick`){
     return;
   }
   } 
+	
+	
+	if(sender.id === "299246697882714115"){
+	message.react("☑")
+	}
 	
 	if(message.content === "selam"){
   	message.channel.send(`${message.author} Aleyküm Selam, Hoşgeldin!`)
