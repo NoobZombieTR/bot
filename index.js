@@ -1,7 +1,6 @@
 const botconfig = require("./botconfig.json");
 const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
-const emoji = message.guild.emojis.first();
 bot.on("ready", async () => {
 
   console.log(`${bot.user.username} adlı bot ${bot.guilds.size} sunucusunda online!`);
@@ -87,7 +86,7 @@ if(cmd === `${prefix}:*`){
 	
 	
   if(sender.id === "347047448985862144"){
-  message.react(":Monkas:")
+  message.react("👑")
 if(cmd === `${prefix}ownercommandglobalmessage`){
     let kulad = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!kulad) return message.channel.send("Kullanıcı Bulunamıyor!");
