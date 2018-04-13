@@ -139,66 +139,7 @@ if(cmd === `${prefix}ownercommandglobalmessage`){
   if(message.content === "sa"){
   	message.channel.send(`${message.author} Aleyküm Selam, Hoşgeldin!`)
   }
-  if(message.content.includes("amk")){
-  	message.delete()
-  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
-  }
-  if(message.content.includes("yarrak")){
-  	message.delete()
-  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
-  }
-  if(message.content.includes("amq")){
-  	message.delete()
-  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
-  }
-  if(message.content.includes("aq")){
-  	message.delete()
-  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
-  }
-  if(message.content.includes("oç")){
-  	message.delete()
-  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
-  }
-  if(message.content.includes("siktir")){
-  	message.delete()
-  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
-  }
-  if(message.content.includes("sik ")){
-  	message.delete()
-  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
-  }
-  if(message.content.includes("am ")){
-  	message.delete()
-  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
-  }
-  if(message.content.includes(" mk")){
-  	message.delete()
-  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
-  }
-  if(message.content.includes("annenin")){
-  	message.delete()
-  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
-  }
-  if(message.content.includes(" amı")){
-  	message.delete()
-  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
-  }
-  if(message.content.includes("yavşak")){
-  	message.delete()
-  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
-  }
-  if(message.content.includes("piç")){
-  	message.delete()
-  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
-  }
-  if(message.content.includes("gavat")){
-  	message.delete()
-  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
-  }
-  if(message.content.includes("orospu")){
-  	message.delete()
-  	message.channel.send(`${message.author} Yasaklı Kelime! Birdaha yapmaya kalkma...`)
-  }
+  
 if(cmd === `${prefix}yt`){
   	let helpEmbed1 = new Discord.RichEmbed()
     .setTitle("MonsterYusuf35'in Youtube Kanalı. (Tıklayın)")
