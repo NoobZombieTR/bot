@@ -1,7 +1,7 @@
 const botconfig = require("./botconfig.json");
 const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
-const emoji = guild.emojis.first();
+const emoji = message.guild.emojis.first();
 bot.on("ready", async () => {
 
   console.log(`${bot.user.username} adlı bot ${bot.guilds.size} sunucusunda online!`);
