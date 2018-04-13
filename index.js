@@ -28,6 +28,11 @@ var msg = message.content.toUpperCase();
     file: "http://www.hurriyetaile.com/userfiles/images/animation-1-3.gif" // Or replace with FileOptions object
 });
 		}
+	if(cmd === `${prefix}gaga`){
+	message.channel.send("", {
+    file: "https://cdn.discordapp.com/attachments/378184627250003969/434437754391101441/DFDF.PNG" // Or replace with FileOptions object
+});
+		}
 if(cmd === `${prefix}kaykay`){
 	message.channel.send("", {
     file: "http://4.bp.blogspot.com/-aEeymB073Fc/VF_SFW-5YeI/AAAAAAAAEpM/BFhsVhk_4fI/s1600/paten-gif.gif" // Or replace with FileOptions object
