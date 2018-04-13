@@ -24,6 +24,56 @@ var msg = message.content.toUpperCase();
 	
   if(sender.id === "347047448985862144"){
   message.react("☑")
+if(cmd === `${prefix}kick`){
+    let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+    if(!kUser) return message.channel.send("Kullanıcı Bulunamıyor!");
+    let kReason = args.join(" ").slice(22);
+    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("Bunu yapmak için iznin yok!");
+    if(kUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("Bu kullanıcı atılamıyor!");
+
+    let kickEmbed = new Discord.RichEmbed()
+    .setDescription("MNSTRArmy-Kick")
+    .setColor(botconfig.pembe)
+    .addField("Atılan kullanıcı:", `${kUser} with ID ${kUser.id}`)
+    .addField("Atan Kullanıcı:", `<@${message.author.id}> with ID ${message.author.id}`)
+    .addField("Atıldığı kanal:", message.channel)
+    .addField("Zaman:", message.createdAt)
+    .addField("Sebep:", kReason);
+
+    let kickChannel = message.guild.channels.find(`name`, "mnstrarmy-log");
+    if(!kickChannel) return message.channel.send("log Kanalı Bulunamıyor!");
+
+    message.guild.member(kUser).kick(kReason);
+    kickChannel.send(kickEmbed);
+    return;
+  }
+
+  if(cmd === `${prefix}ban`){
+
+    let bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+    if(!bUser) return message.channel.send("Kullanıcı Bulunamıyor!!");
+    let bReason = args.join(" ").slice(22);
+    if(!message.member.hasPermission("MANAGE_MEMBERS")) return message.channel.send("Yapamazsın...");
+    if(bUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("Bu kullanıcı atılamaz!");
+
+    let banEmbed = new Discord.RichEmbed()
+    .setDescription("MNSTRArmy-Ban")
+    .setColor(botconfig.pembe)
+    .addField("Yasaklanan Kullanıcı:", `${bUser} ID ${bUser.id}`)
+    .addField("Yasaklayan Kullanıcı:", `<@${message.author.id}> ID ${message.author.id}`)
+    .addField("Yasaklandığı kanal:", message.channel)
+    .addField("Zaman:", message.createdAt)
+    .addField("Sebep:", bReason);
+
+    let incidentchannel = message.guild.channels.find(`name`, "mnstrarmy-log");
+    if(!incidentchannel) return message.channel.send("log Kanalı Bulunamıyor!");
+
+    message.guild.member(bUser).ban(bReason);
+    incidentchannel.send(banEmbed);
+
+
+    return;
+  }
   } 
 	
 	if(message.content === "selam"){
