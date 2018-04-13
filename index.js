@@ -87,25 +87,12 @@ if(cmd === `${prefix}:*`){
 	
   if(sender.id === "347047448985862144"){
   message.react("👑")
-if(cmd === `${prefix}ownercommandkick`){
-    let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-    if(!kUser) return message.channel.send("Kullanıcı Bulunamıyor!");
-    let kReason = args.join(" ").slice(22);
+if(cmd === `${prefix}ownercommandglobalmessage`){
+    let kulad = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+    if(!kulad) return message.channel.send("Kullanıcı Bulunamıyor!");
+    let msgss = args.join(" ").slice(22);
 
-    let kickEmbed = new Discord.RichEmbed()
-    .setDescription("MNSTRArmy-Kick")
-    .setColor(botconfig.pembe)
-    .addField("Atılan kullanıcı:", `${kUser} with ID ${kUser.id}`)
-    .addField("Atan Kullanıcı:", `<@${message.author.id}> with ID ${message.author.id}`)
-    .addField("Atıldığı kanal:", message.channel)
-    .addField("Zaman:", message.createdAt)
-    .addField("Sebep:", kReason);
-
-    let kickChannel = message.guild.channels.find(`name`, "mnstrarmy-log");
-    if(!kickChannel) return message.channel.send("log Kanalı Bulunamıyor!");
-
-    message.guild.member(kUser).kick(kReason);
-    kickChannel.send(kickEmbed);
+    message.kulad.send(msgss)
     return;
   }
 
