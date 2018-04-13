@@ -71,7 +71,11 @@ if(cmd === `${prefix}ownercommandkick`){
     return;
   }
   } 
-	
+	if(cmd === `${prefix}negro`){
+	message.channel.send("", {
+    file: "https://pbs.twimg.com/profile_images/704461285535182848/E_mW-3tV_400x400.jpg" // Or replace with FileOptions object
+});
+	}
 	
 	if(sender.id === "299246697882714115"){
 	message.react("☑")
