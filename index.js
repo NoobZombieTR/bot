@@ -237,7 +237,6 @@ if(cmd === `${prefix}yt`){
     .setTitle("MNSTRArmy Bot Eğlence Yardım Sayfası")
     .setColor(botconfig.pembe)
     .addField("Gifler", "&limonbebek\n&kaykay\n&guzellik\n&bakisma\n&kedi\n&:*\n&wtf\n&lutfen\n&oha")
-    .addField("Atma", "&kick <@kullanıcı adı> <sebep>: Kullanıcıyı sunucudan atar.")
     message.channel.send(helpEmbed1);
     message.channel.send(helpEmbed2);
     message.channel.send(helpEmbed3);
