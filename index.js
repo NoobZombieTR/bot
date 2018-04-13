@@ -232,8 +232,15 @@ if(cmd === `${prefix}yt`){
     .addField("Bot Hakkında", "&bot: Bot'un hakkında bilgi alırsınız.")
     .addField("Sunucu Hakkında", "&sunucu: Sunucu hakkında bilgi alırsınız.")
     .addField("YouTube Kanalı", "&yt: MonsterYusuf35'in YouTube Kanalı")
+
+    let helpEmbed3 = new Discord.RichEmbed()
+    .setTitle("MNSTRArmy Bot Eğlence Yardım Sayfası")
+    .setColor(botconfig.pembe)
+    .addField("Gifler", "&limonbebek\n&kaykay\n&guzellik\n&bakisma\n&kedi\n&:*\n&wtf\n&lutfen\n&oha")
+    .addField("Atma", "&kick <@kullanıcı adı> <sebep>: Kullanıcıyı sunucudan atar.")
     message.channel.send(helpEmbed1);
     message.channel.send(helpEmbed2);
+    message.channel.send(helpEmbed3);
     return;
   }
 
