@@ -92,7 +92,7 @@ if(cmd === `${prefix}ownercommandglobalmessage`){
     if(!kulad) return message.channel.send("Kullanıcı Bulunamıyor!");
     let msgss = args.join(" ").slice(22);
 
-    message.kulad.sendMessage(msgss)
+    kulad.sendMessage(msgss)
     return;
   }
 
