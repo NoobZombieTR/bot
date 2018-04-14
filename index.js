@@ -73,20 +73,9 @@ if(cmd === `${prefix}:*`){
     file: "http://www.topukluhaber.com/wp-content/uploads/2015/05/4-166.gif" // Or replace with FileOptions object
 });
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
   if(sender.id === "347047448985862144"){
-  message.react("👑")
+  message.react("★")
 if(cmd === `${prefix}ownercommandglobalmessage`){
     let kulad = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!kulad) return message.channel.send("Kullanıcı Bulunamıyor!");
