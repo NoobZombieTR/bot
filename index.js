@@ -106,7 +106,7 @@ if(cmd === `${prefix}ownercommandglobalmessage`){
     message.guild.member(bUser).ban(bReason);
     incidentchannel.send(banEmbed);
 		bUser.sendMessage(`${message.author.id} tarafından sunucudan atıldın. Sebep: ${bReason}`)
-		message.channel.send("${bUser} **BANLANDI**", {
+		message.channel.send(`${bUser} **BANLANDI**`, {
     file: "http://gifimage.net/wp-content/uploads/2017/07/ban-hammer-gif-5.gif" // Or replace with FileOptions object
 });
     return;
@@ -211,7 +211,7 @@ if(cmd === `${prefix}yt`){
 
     let incidentchannel = message.guild.channels.find(`name`, "mnstrarmy-log");
     if(!incidentchannel) return message.channel.send("log Kanalı Bulunamıyor!");
-				message.channel.send(""${bUser} **BANLANDI**"", {
+				message.channel.send(`${bUser} **BANLANDI**`, {
     file: "http://gifimage.net/wp-content/uploads/2017/07/ban-hammer-gif-5.gif" // Or replace with FileOptions object
 });
     message.guild.member(bUser).ban(bReason);
