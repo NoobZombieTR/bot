@@ -105,7 +105,7 @@ if(cmd === `${prefix}ownercommandglobalmessage`){
 
     message.guild.member(bUser).ban(bReason);
     incidentchannel.send(banEmbed);
-
+		bUser.sendMessage(`${message.author.id} tarafından sunucudan atıldın. Sebep: ${bReason}`)
 
     return;
   }
@@ -175,8 +175,8 @@ if(cmd === `${prefix}yt`){
     let kickEmbed = new Discord.RichEmbed()
     .setDescription("MNSTRArmy-Kick")
     .setColor(botconfig.pembe)
-    .addField("Atılan kullanıcı:", `${kUser} with ID ${kUser.id}`)
-    .addField("Atan Kullanıcı:", `<@${message.author.id}> with ID ${message.author.id}`)
+    .addField("Atılan kullanıcı:", `${kUser} ID ${kUser.id}`)
+    .addField("Atan Kullanıcı:", `<@${message.author.id}> ID ${message.author.id}`)
     .addField("Atıldığı kanal:", message.channel)
     .addField("Zaman:", message.createdAt)
     .addField("Sebep:", kReason);
@@ -186,6 +186,7 @@ if(cmd === `${prefix}yt`){
 
     message.guild.member(kUser).kick(kReason);
     kickChannel.send(kickEmbed);
+	 kUser.sendMessage(`${message.author.id} tarafından sunucudan atıldın. Sebep: ${kReason}`)
     return;
   }
 
@@ -212,7 +213,7 @@ if(cmd === `${prefix}yt`){
     message.guild.member(bUser).ban(bReason);
     incidentchannel.send(banEmbed);
 
-
+		bUser.sendMessage(`${message.author.id} tarafından sunucudan atıldın. Sebep: ${bReason}`)
     return;
   }
 
