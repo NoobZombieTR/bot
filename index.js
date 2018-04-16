@@ -2,7 +2,7 @@ const botconfig = require("./botconfig.json");
 const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 bot.on("ready", async () => {
-
+	var gwacikmi = false;
   console.log(`${bot.user.username} adlı bot ${bot.guilds.size} sunucusunda online!`);
   bot.user.setActivity("&yardim - MonsterArmy Bot by NoobZombie#5514", {url: "https://www.twitch.tv/directory/game/Minecraft"});
 
@@ -118,7 +118,7 @@ if(cmd === `${prefix}ownercommandglobalmessage`){
     .setDescription("ÇEKİLİŞ VAKTİ!!! :)")
     .setColor(botconfig.pembe)
     .addField("Çekiliş Başlamıltır!", `**ÖDÜLÜ ALMAK İÇİN &odulual857984168 yazın!\n\nBü sistem şu anlık test içindir. Lütfen hataları belirtiniz.(NoobZombie#5514)**`)
-		var gwacikmi = true;
+		gwacikmi = true;
 			incidentchannel.send(Embed);
 		}
 		else {
@@ -133,7 +133,7 @@ if(cmd === `${prefix}ownercommandglobalmessage`){
     .setDescription("AWWWWW YEAHHHH")
     .setColor(botconfig.pembe)
     .addField("ÇEKİLİŞ BİTTİ!", `**Çekilişi, ${message.author} kaptı :)\n\nBü sistem şu anlık test içindir. Lütfen hataları belirtiniz.(NoobZombie#5514)**`)
-		var gwacikmi = false;
+		gwacikmi = false;
 			incidentchannel.send(Embed);
 		}
 		else {
@@ -158,7 +158,7 @@ if(cmd === `${prefix}ownercommandglobalmessage`){
     .setDescription("ÇEKİLİŞ VAKTİ!!! :)")
     .setColor(botconfig.pembe)
     .addField("Çekiliş Başlamıltır!", `**ÖDÜLÜ ALMAK İÇİN &odulual857984168 yazın!\n\nBü sistem şu anlık test içindir. Lütfen hataları belirtiniz.(NoobZombie#5514)**`)
-		var gwacikmi = true;
+		gwacikmi = true;
 			incidentchannel.send(Embed);
 			}
 		}
@@ -173,7 +173,7 @@ if(cmd === `${prefix}ownercommandglobalmessage`){
     .setDescription("AWWWWW YEAHHHH")
     .setColor(botconfig.pembe)
     .addField("ÇEKİLİŞ BİTTİ!", `**Çekilişi, ${message.author} kaptı :)\n\nBü sistem şu anlık test içindir. Lütfen hataları belirtiniz.(NoobZombie#5514)**`)
-		var gwacikmi = false;
+		gwacikmi = false;
 			incidentchannel.send(Embed);
 		}
 		else {
