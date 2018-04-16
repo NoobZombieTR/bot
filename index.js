@@ -2,11 +2,12 @@ const botconfig = require("./botconfig.json");
 const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 bot.on("ready", async () => {
-	var gwacikmi = false;
+	
   console.log(`${bot.user.username} adlı bot ${bot.guilds.size} sunucusunda online!`);
   bot.user.setActivity("&yardim - MonsterArmy Bot by NoobZombie#5514", {url: "https://www.twitch.tv/directory/game/Minecraft"});
 
 });
+var gwacikmi = false;
 bot.on("message", async message => {
   if(message.author.bot) return;
   if(message.channel.type === "dm") return;
