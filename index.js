@@ -7,7 +7,7 @@ bot.on("ready", async () => {
   bot.user.setActivity("&yardim - MonsterArmy Bot by NoobZombie#5514", {url: "https://www.twitch.tv/directory/game/Minecraft"});
 
 });
-var gwacikmi = false;
+
 bot.on("message", async message => {
   if(message.author.bot) return;
   if(message.channel.type === "dm") return;
@@ -114,16 +114,13 @@ if(cmd === `${prefix}ownercommandglobalmessage`){
   }
 		
 		if(cmd === `${prefix}cmd-yusuf:cekilis`){
-			if(gwacikmi == false){
+
 			let Embed = new Discord.RichEmbed()
     .setDescription("ÇEKİLİŞ VAKTİ!!! :)")
     .setColor(botconfig.pembe)
     .addField("Çekiliş Başlamıltır!", `**ÖDÜLÜ ALMAK İÇİN &odulual857984168 yazın!\n\nBü sistem şu anlık test içindir. Lütfen hataları belirtiniz.(NoobZombie#5514)**`)
-		gwacikmi = true;
+		var gwacikmi = true;
 			incidentchannel.send(Embed);
-		}
-		else {
-		message.channel.send(`${message.author}, zaten bir çekiliş başlattın.`)
 		}
 		return;
 	}
