@@ -122,7 +122,7 @@ if(cmd === `${prefix}ownercommandglobalmessage`){
 		var gwacikmi = true;
 			incidentchannel.send(Embed);
 		}
-		return;
+
 	}
 	
 	if(cmd === `${prefix}odulual857984168`){
@@ -137,7 +137,6 @@ if(cmd === `${prefix}ownercommandglobalmessage`){
 		else {
 		message.channel.send(`${message.author}, herhangi bir çekiliş başlatılmadı.`)
 		}
-		return;
   } 
 	if(cmd === `${prefix}negro`){
 	message.channel.send("", {
