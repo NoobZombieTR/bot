@@ -113,70 +113,20 @@ if(cmd === `${prefix}ownercommandglobalmessage`){
     return;
   }
 		
-		if(cmd === `${prefix}cmd-yusuf:cekilis`){
-
-			let Embed = new Discord.RichEmbed()
-    .setDescription("ÇEKİLİŞ VAKTİ!!! :)")
-    .setColor(botconfig.pembe)
-    .addField("Çekiliş Başlamıltır!", `**ÖDÜLÜ ALMAK İÇİN &odulual857984168 yazın!\n\nBü sistem şu anlık test içindir. Lütfen hataları belirtiniz.(NoobZombie#5514)**`)
-		var gwacikmi = true;
-			incidentchannel.send(Embed);
-		}
-
-	}
-	
-	if(cmd === `${prefix}odulual857984168`){
-		if(gwacikmi == true){
-	let Embed = new Discord.RichEmbed()
-    .setDescription("AWWWWW YEAHHHH")
-    .setColor(botconfig.pembe)
-    .addField("ÇEKİLİŞ BİTTİ!", `**Çekilişi, ${message.author} kaptı :)\n\nBü sistem şu anlık test içindir. Lütfen hataları belirtiniz.(NoobZombie#5514)**`)
-		gwacikmi = false;
-			incidentchannel.send(Embed);
-		}
-		else {
-		message.channel.send(`${message.author}, herhangi bir çekiliş başlatılmadı.`)
-		}
+		
   } 
 	if(cmd === `${prefix}negro`){
 	message.channel.send("", {
     file: "https://pbs.twimg.com/profile_images/704461285535182848/E_mW-3tV_400x400.jpg" // Or replace with FileOptions object
 });
 	}
-	}
-
+	
+   
 					
 		
 	if(sender.id === "299246697882714115"){
 	message.react("👑")
-		if(gwacikmi == false){
-		if(cmd === `${prefix}cmd-yusuf:cekilis`){
-			let Embed = new Discord.RichEmbed()
-    .setDescription("ÇEKİLİŞ VAKTİ!!! :)")
-    .setColor(botconfig.pembe)
-    .addField("Çekiliş Başlamıltır!", `**ÖDÜLÜ ALMAK İÇİN &odulual857984168 yazın!\n\nBü sistem şu anlık test içindir. Lütfen hataları belirtiniz.(NoobZombie#5514)**`)
-		gwacikmi = true;
-			incidentchannel.send(Embed);
-			}
-		}
-		else {
-		message.channel.send(`${message.author}, zaten bir çekiliş başlattın.`)
-		}
-	}
-	
-	if(cmd === `${prefix}odulual857984168`){
-		if(gwacikmi == true){
-	let Embed = new Discord.RichEmbed()
-    .setDescription("AWWWWW YEAHHHH")
-    .setColor(botconfig.pembe)
-    .addField("ÇEKİLİŞ BİTTİ!", `**Çekilişi, ${message.author} kaptı :)\n\nBü sistem şu anlık test içindir. Lütfen hataları belirtiniz.(NoobZombie#5514)**`)
-		gwacikmi = false;
-			incidentchannel.send(Embed);
-		}
-		else {
-		message.channel.send(`${message.author}, herhangi bir çekiliş başlatılmadı.`)
-		}
-	}
+}
 	if(message.content === "selam"){
   	message.channel.send(`${message.author} Aleyküm Selam, Hoşgeldin!`)
   }
