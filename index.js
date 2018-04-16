@@ -111,19 +111,20 @@ if(cmd === `${prefix}ownercommandglobalmessage`){
 });
     return;
   }
-		if(gwacikmi == false){
+		
 		if(cmd === `${prefix}cmd-yusuf:cekilis`){
+			if(gwacikmi == false){
 			let Embed = new Discord.RichEmbed()
     .setDescription("ÇEKİLİŞ VAKTİ!!! :)")
     .setColor(botconfig.pembe)
     .addField("Çekiliş Başlamıltır!", `**ÖDÜLÜ ALMAK İÇİN &odulual857984168 yazın!\n\nBü sistem şu anlık test içindir. Lütfen hataları belirtiniz.(NoobZombie#5514)**`)
 		var gwacikmi = true;
 			incidentchannel.send(Embed);
-			}
 		}
 		else {
 		message.channel.send(`${message.author}, zaten bir çekiliş başlattın.`)
 		}
+		return;
 	}
 	
 	if(cmd === `${prefix}odulual857984168`){
@@ -138,11 +139,13 @@ if(cmd === `${prefix}ownercommandglobalmessage`){
 		else {
 		message.channel.send(`${message.author}, herhangi bir çekiliş başlatılmadı.`)
 		}
+		return;
   } 
 	if(cmd === `${prefix}negro`){
 	message.channel.send("", {
     file: "https://pbs.twimg.com/profile_images/704461285535182848/E_mW-3tV_400x400.jpg" // Or replace with FileOptions object
 });
+	}
 	}
 
 					
