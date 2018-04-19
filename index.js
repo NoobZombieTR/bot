@@ -37,7 +37,7 @@ var msg = message.content.toUpperCase();
   }
 	
 	if (sender.id === "434617159315095553"){
-  	message.react("💎")
+  	message.react("🔱")
   }
 	
 	if(cmd === `${prefix}limonbebek`){
