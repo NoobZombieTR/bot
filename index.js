@@ -125,7 +125,7 @@ if(cmd === `${prefix}ownercommandglobalmessage`){
 					
 		
 	if(sender.id === "299246697882714115"){
-	message.react("👑")
+	
 }
 	if(message.content === "selam"){
   	message.channel.send(`${message.author} Aleyküm Selam, Hoşgeldin!`)
