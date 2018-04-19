@@ -5,6 +5,8 @@ bot.on("ready", async () => {
 	
   console.log(`${bot.user.username} adlı bot ${bot.guilds.size} sunucusunda online!`);
   bot.user.setActivity(`&yardim - ${bot.guilds.size} sunucuda online!`, {url: "https://www.twitch.tv/directory/game/Minecraft"});
+	
+	message.channel.send("Bu bir test mesajıdır.");
 
 });
 
