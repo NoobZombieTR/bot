@@ -32,6 +32,13 @@ var msg = message.content.toUpperCase();
   	return;
   }
 	
+	if (sender.id === "367931055962980352"){
+  	message.react("⭐")
+  }
+	
+	if (sender.id === "434617159315095553"){
+  	message.react("💎")
+  }
 	
 	if(cmd === `${prefix}limonbebek`){
 	message.channel.send("", {
