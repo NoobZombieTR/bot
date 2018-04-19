@@ -189,7 +189,8 @@ if(cmd === `${prefix}yt`){
     .addField("Bot Hakkında", "&bot: Bot'un hakkında bilgi alırsınız.")
     .addField("Sunucu Hakkında", "&sunucu: Sunucu hakkında bilgi alırsınız.")
     .addField("YouTube Kanalı", "&yt: MonsterYusuf35'in YouTube Kanalı")
-    .addField("Derin Ayarlar", "&derinyardim: Bilmiyorsan yapma :)")
+    .addField("Derin Yardım", "&derinyardim: Bilmiyorsan yapma :)")
+		.addField("Davet Linki", "[Tıkla](https://discordapp.com/api/oauth2/authorize?client_id=434000273049124904&scope=bot&permissions=0)")
 
     let helpEmbed3 = new Discord.RichEmbed()
     .setTitle("MNSTRArmy Bot Eğlence Yardım Sayfası")
@@ -207,7 +208,7 @@ if(cmd === `${prefix}yt`){
     .setTitle("MNSTRArmy Bot Derin Yardım Sayfası")
     .setColor(botconfig.pembe)
     .addField("Derinleş", "[+]Bir kullanıcıyı banlamak için rolünde 'Kullanıcıları yasakla' seçeneği açık olması gerek.\n[+]Bir kullanıcıyı atmak için rolünde 'Kullanıcıları At' seçeneği açık olması gerek.\n[+]Kanallara link göndermek için rolünde 'Mesajları Düzenle' seçeneğinin açık olması gerek\n[+]&del komutunda **YAZILAN KANALDAKİ BÜTÜN MESAJLAR** silinir, bu nedenle yanına bir rakam veya bir @kullanıcıadı girmene gerek yok\n[+]Eğer acil bir yardıma ihtiyacın varsa bana mesaj göndermeyi lütfen unutma: NoobZombie#5514")
-		.addField("dddd", "[masked links](http://google.com)")
+		.addField("Davet Linki", "[Tıkla](https://discordapp.com/api/oauth2/authorize?client_id=434000273049124904&scope=bot&permissions=0)")
     message.channel.send(helpEmbed1);
     return;
   }
