@@ -20,6 +20,13 @@ bot.on("message", async message => {
 var msg = message.content.toUpperCase();
   var sender = message.author;
 
+	
+	if(message.content.includes("http")){
+  	message.delete()
+  	message.channel.send(`${message.author} Link paylaşımı yasaktır!`)
+  }
+	
+	
   if (sender.id === "429357437641031680"){
   	return;
   }
