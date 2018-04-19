@@ -6,7 +6,6 @@ bot.on("ready", async () => {
   console.log(`${bot.user.username} adlı bot ${bot.guilds.size} sunucusunda online!`);
   bot.user.setActivity(`&yardim - ${bot.guilds.size} sunucuda online!`, {url: "https://www.twitch.tv/directory/game/Minecraft"});
 	
-	message.channel.send("Bu bir test mesajıdır.");
 
 });
 
@@ -88,7 +87,7 @@ if(cmd === `${prefix}:*`){
             messagesDeleted = messages.array().length; // number of messages deleted
 
             // Logging the number of messages deleted on both the channel and console.
-            message.channel.sendMessage("Deletion of messages successful. Total messages deleted: "+messagesDeleted);
+            message.channel.sendMessage("Başarılı! Şu kadar mesaj sildin: "+messagesDeleted);
             console.log('Deletion of messages successful. Total messages deleted: '+messagesDeleted)
           })
           .catch(err => {
