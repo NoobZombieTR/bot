@@ -244,11 +244,8 @@ if(cmd === `${prefix}yt`){
     .addField("Zaman:", message.createdAt)
     .addField("Sebep:", kReason);
 
-    let kickChannel = message.guild.channels.find(`name`, "mnstrarmy-log");
-    if(!kickChannel) return message.channel.send("log Kanalı Bulunamıyor!");
 
-    message.guild.member(kUser).kick(kReason);
-    kickChannel.send(kickEmbed);
+    message.channel.send(kickEmbed);
 	 kUser.sendMessage(`${message.author.id} tarafından sunucudan atıldın. Sebep: ${kReason}`)
     return;
   }
@@ -270,13 +267,11 @@ if(cmd === `${prefix}yt`){
     .addField("Zaman:", message.createdAt)
     .addField("Sebep:", bReason);
 
-    let incidentchannel = message.guild.channels.find(`name`, "mnstrarmy-log");
-    if(!incidentchannel) return message.channel.send("log Kanalı Bulunamıyor!");
 				message.channel.send(`${bUser} **BANLANDI**`, {
     file: "http://gifimage.net/wp-content/uploads/2017/07/ban-hammer-gif-5.gif" // Or replace with FileOptions object
 });
     message.guild.member(bUser).ban(bReason);
-    incidentchannel.send(banEmbed);
+
 
 		bUser.sendMessage(`${message.author.id} tarafından sunucudan atıldın. Sebep: ${bReason}`)
     return;
