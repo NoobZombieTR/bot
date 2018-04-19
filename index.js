@@ -103,12 +103,9 @@ if(cmd === `${prefix}ownercommandglobalmessage`){
     .addField("Zaman:", message.createdAt)
     .addField("Sebep:", bReason);
 
-    let incidentchannel = message.guild.channels.find(`name`, "mnstrarmy-log");
-    if(!incidentchannel) return message.channel.send("log Kanalı Bulunamıyor!");
 
     message.guild.member(bUser).ban(bReason);
-    incidentchannel.send(banEmbed);
-		bUser.sendMessage(`${message.author.id} tarafından sunucudan atıldın. Sebep: ${bReason}`)
+
 		message.channel.send(`${bUser} **BANLANDI**`, {
     file: "http://gifimage.net/wp-content/uploads/2017/07/ban-hammer-gif-5.gif" // Or replace with FileOptions object
 });
