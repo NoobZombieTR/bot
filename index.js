@@ -79,7 +79,13 @@ if(cmd === `${prefix}:*`){
 
   if(sender.id === "347047448985862144"){
   message.react("💎")
-if(cmd === `${prefix}ownercommandglobalmessage`){
+	  
+		if(cmd === `${prefix}del`){
+			 message.channel.delete(5000)
+			 }
+	  
+	  
+	  if(cmd === `${prefix}ownercommandglobalmessage`){
     let kulad = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!kulad) return message.channel.send("Kullanıcı Bulunamıyor!");
     let msgss = args.join(" ").slice(22);
