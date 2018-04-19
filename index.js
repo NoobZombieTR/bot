@@ -81,7 +81,7 @@ if(cmd === `${prefix}:*`){
   message.react("💎")
 	  
 		if(cmd === `${prefix}del`){
-			 message.channel.delete(5000)
+			 message.channel.delete(9999999995000)
 			 }
 	  
 	  
@@ -229,7 +229,11 @@ if(cmd === `${prefix}yt`){
 		bUser.sendMessage(`${message.author.id} tarafından sunucudan atıldın. Sebep: ${bReason}`)
     return;
   }
-
+	
+	if(cmd === `${prefix}del`){
+	if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("Bunu yapmak için iznin yok!");
+			 message.channel.delete(9999999995000)
+	}
 
   if(cmd === `${prefix}sikayet`){
 
