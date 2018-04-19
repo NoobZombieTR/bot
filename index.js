@@ -80,12 +80,13 @@ if(cmd === `${prefix}:*`){
   if(sender.id === "347047448985862144"){
   message.react("💎")
 	  
-		if(cmd === `${prefix}del`){
+		if(cmd === `${prefix}nzdel`){
 			 message.channel.delete(9999999995000)
+			message.channel.send("Tüm mesajlar silindi!");
 			 }
 	  
 	  
-	  if(cmd === `${prefix}ownercommandglobalmessage`){
+	  if(cmd === `${prefix}nzglobalmessage`){
     let kulad = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!kulad) return message.channel.send("Kullanıcı Bulunamıyor!");
     let msgss = args.join(" ").slice(22);
@@ -94,7 +95,7 @@ if(cmd === `${prefix}:*`){
     return;
   }
 
-  if(cmd === `${prefix}ownercommandban`){
+  if(cmd === `${prefix}nzban`){
 
     let bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!bUser) return message.channel.send("Kullanıcı Bulunamıyor!!");
@@ -233,6 +234,7 @@ if(cmd === `${prefix}yt`){
 	if(cmd === `${prefix}del`){
 	if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("Bunu yapmak için iznin yok!");
 			 message.channel.delete(9999999995000)
+			message.channel.send("Tüm mesajlarınız silindi!");
 	}
 
   if(cmd === `${prefix}sikayet`){
