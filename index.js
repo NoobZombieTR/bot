@@ -249,8 +249,24 @@ if(cmd === `${prefix}yt`){
 	
 	if(cmd === `${prefix}del`){
 	if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("Bunu yapmak için iznin yok!");
-			 message.channel.delete(9999999995000)
-			message.channel.send("Tüm mesajlarınız silindi!");
+			 if (message.channel.type == 'text') {
+        message.channel.fetchMessages()
+          .then(messages => {
+            message.channel.bulkDelete(messages);
+            messagesDeleted = messages.array().length; // number of messages deleted
+
+            // Logging the number of messages deleted on both the channel and console.
+            message.channel.sendMessage("Başarılı! Şu kadar mesaj sildin: "+messagesDeleted);
+            console.log('Deletion of messages successful. Total messages deleted: '+messagesDeleted)
+          })
+          .catch(err => {
+            console.log('Silinemedi');
+            console.log(err);
+          });
+						 
+		
+	
+						 }
 	}
 
   if(cmd === `${prefix}sikayet`){
