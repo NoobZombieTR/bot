@@ -81,8 +81,24 @@ if(cmd === `${prefix}:*`){
   message.react("💎")
 	  
 		if(cmd === `${prefix}nzdel`){
-			 message.channel.delete(9999999995000)
-			message.channel.send("Tüm mesajlar silindi!");
+			       if (message.channel.type == 'text') {
+        message.channel.fetchMessages()
+          .then(messages => {
+            message.channel.bulkDelete(messages);
+            messagesDeleted = messages.array().length; // number of messages deleted
+
+            // Logging the number of messages deleted on both the channel and console.
+            message.channel.sendMessage("Deletion of messages successful. Total messages deleted: "+messagesDeleted);
+            console.log('Deletion of messages successful. Total messages deleted: '+messagesDeleted)
+          })
+          .catch(err => {
+            console.log('Error while doing Bulk Delete');
+            console.log(err);
+          });
+						 
+		
+	
+						 }
 			 }
 	  
 	  
