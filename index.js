@@ -207,7 +207,7 @@ if(cmd === `${prefix}yt`){
     .setTitle("MNSTRArmy Bot Derin Yardım Sayfası")
     .setColor(botconfig.pembe)
     .addField("Derinleş", "[+]Bir kullanıcıyı banlamak için rolünde 'Kullanıcıları yasakla' seçeneği açık olması gerek.\n[+]Bir kullanıcıyı atmak için rolünde 'Kullanıcıları At' seçeneği açık olması gerek.\n[+]Kanallara link göndermek için rolünde 'Mesajları Düzenle' seçeneğinin açık olması gerek\n[+]&del komutunda **YAZILAN KANALDAKİ BÜTÜN MESAJLAR** silinir, bu nedenle yanına bir rakam veya bir @kullanıcıadı girmene gerek yok\n[+]Eğer acil bir yardıma ihtiyacın varsa bana mesaj göndermeyi lütfen unutma: NoobZombie#5514")
-		.setFooter("https://www.twitch.tv/directory/game/Minecraft", "http://i.imgur.com/w1vhFSR.png")
+		.setFooter("[masked links](http://google.com)https://www.twitch.tv/directory/game/Minecraft", "http://i.imgur.com/w1vhFSR.png")
     message.channel.send(helpEmbed1);
     return;
   }
