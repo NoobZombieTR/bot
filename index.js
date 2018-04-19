@@ -156,6 +156,7 @@ if(cmd === `${prefix}yt`){
     .setColor(botconfig.pembe)
     .addField("Yasaklama", "&ban <@kullanıcı adı> <sebep>: Kullanıcıyı sunucudan yasaklar.")
     .addField("Atma", "&kick <@kullanıcı adı> <sebep>: Kullanıcıyı sunucudan atar.")
+    .addField("Mesajları Silme", "&del: Tüm mesajları siler.")
 
     let helpEmbed2 = new Discord.RichEmbed()
     .setTitle("MNSTRArmy Bot Kullanıcı Yardım Sayfası")
