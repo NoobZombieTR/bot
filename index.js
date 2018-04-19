@@ -22,6 +22,7 @@ var msg = message.content.toUpperCase();
 
 	
 	if(message.content.includes("http")){
+	if(message.member.hasPermission("MANAGE_MESSAGES")) return;
   	message.delete()
   	message.channel.send(`${message.author} Link paylaşımı yasaktır!`)
   }
