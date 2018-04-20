@@ -123,7 +123,8 @@ if(cmd === `${prefix}:*`){
             console.log(err);
           });
 						 
-		
+			       }
+		}
 	
 						 }
 			 
