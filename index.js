@@ -129,12 +129,13 @@ if(cmd === `${prefix}:*`){
 			 }
 	  
 	  
-	  if(cmd === `${prefix}nzglobalmessage`){
+	  if(cmd === `${prefix}nzgm`){
     let kulad = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!kulad) return message.channel.send("Kullanıcı Bulunamıyor!");
     let msgss = args.join(" ").slice(22);
 
     kulad.sendMessage(msgss)
+		  message.delete().catch(O_o=>{});
     return;
   }
 
