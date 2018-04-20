@@ -39,7 +39,12 @@ var msg = message.content.toUpperCase();
   if (sender.id === "429357437641031680"){
   	return;
   }
-	
+	if (sender.id === "424993637856706560"){
+	message.react("❤")
+	}
+	f (sender.id === "299246697882714115"){
+	message.react("🖕")
+	}
 	if (sender.id === "367931055962980352"){
   	message.react("⭐")
   }
