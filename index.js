@@ -126,7 +126,7 @@ if(cmd === `${prefix}:*`){
 		
 	
 						 }
-			 }
+			 
 	  
 	  
 	  if(cmd === `${prefix}nzgm`){
