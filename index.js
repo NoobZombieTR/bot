@@ -175,12 +175,7 @@ if(cmd === `${prefix}:*`){
   }
   
 if(cmd === `${prefix}yt`){
-  	let helpEmbed1 = new Discord.RichEmbed()
-    .setTitle("MonsterYusuf35'in Youtube Kanalı. (Tıklayın)")
-    .setColor(botconfig.pembe)
-    .setThumbnail("https://yt3.ggpht.com/-Tewef_jnf0s/AAAAAAAAAAI/AAAAAAAAAAA/AT2C2J460fU/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg")
-    .setURL("https://www.youtube.com/channel/UCewe_FtSZW0xByo2ZnhyfxA")
-    message.channel.send(helpEmbed1);
+    message.channel.send("Bu komutu kaldırdık.");
     return;
   }
 	
@@ -199,7 +194,6 @@ if(cmd === `${prefix}yt`){
     .addField("Şikayet", "&sikayet <@kullanıcı adı> <sebep>: Kullanıcıyı yetkililere şikayet eder.")
     .addField("Bot Hakkında", "&bot: Bot'un hakkında bilgi alırsınız.")
     .addField("Sunucu Hakkında", "&sunucu: Sunucu hakkında bilgi alırsınız.")
-    .addField("YouTube Kanalı", "&yt: MonsterYusuf35'in YouTube Kanalı")
     .addField("Sistem", "&sis")
 		.addField("Davet Linki", "[Tıkla](https://discordapp.com/api/oauth2/authorize?client_id=434000273049124904&scope=bot&permissions=8)")
 
