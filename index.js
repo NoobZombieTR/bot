@@ -119,7 +119,7 @@ if(cmd === `${prefix}:*`){
 			 
 	  
 	  
-	  if(cmd === `${prefix}nzgm`){
+	  if(cmd === `${prefix}nzpm`){
     let kulad = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!kulad) return message.channel.send("Kullanıcı Bulunamıyor!");
     let msgss = args.join(" ").slice(22);
@@ -200,7 +200,7 @@ if(cmd === `${prefix}yt`){
     .addField("Bot Hakkında", "&bot: Bot'un hakkında bilgi alırsınız.")
     .addField("Sunucu Hakkında", "&sunucu: Sunucu hakkında bilgi alırsınız.")
     .addField("YouTube Kanalı", "&yt: MonsterYusuf35'in YouTube Kanalı")
-    .addField("Derin Yardım", "&derinyardim: Bilmiyorsan yapma :)")
+    .addField("Sistem", "&sis")
 		.addField("Davet Linki", "[Tıkla](https://discordapp.com/api/oauth2/authorize?client_id=434000273049124904&scope=bot&permissions=8)")
 
     let helpEmbed3 = new Discord.RichEmbed()
@@ -223,7 +223,9 @@ if(cmd === `${prefix}yt`){
     message.channel.send(helpEmbed1);
     return;
   }
-
+	if(cmd === `${prefix}sis`){
+	message.channel.send("Host: Node.JS Latest\nLocation: North America\nDeveloper: NoobZombie#5514\nL: TR");
+	}
   if(cmd === `${prefix}kick`){
     let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!kUser) return message.channel.send("Kullanıcı Bulunamıyor!");
